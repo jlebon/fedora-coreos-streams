@@ -28,7 +28,7 @@ jobs:
       - name: Checkout fedora-coreos-config
         uses: actions/checkout@v2
         with:
-          repository: coreos/fedora-coreos-config
+          repository: jlebon/fedora-coreos-config
           ref: ${{ env.target_stream }}
           path: fcos
           token: ${{ secrets.COREOSBOT_RELENG_TOKEN }}
